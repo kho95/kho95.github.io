@@ -1,28 +1,10 @@
-/*
-Theme Name: IAMX
-Author: Trendy Theme
-Author URL: trendytheme.net
-*/
-
-/*
-    = Preloader
-    = Progress Bar
-
-*/
+window.sr = ScrollReveal();
+sr.reveal('.foo');
+sr.reveal('.bar');
 
 jQuery(function ($) {
 
     'use strict';
-
-    /* ---------------------------------------------- /*
-     * Preloader
-    /* ---------------------------------------------- */
-
-    $(window).ready(function() {
-        $('#pre-status').fadeOut();
-        $('#tt-preloader').delay(350).fadeOut('slow');
-    });
-
     // -------------------------------------------------------------
     // Progress Bar
     // -------------------------------------------------------------
@@ -59,18 +41,4 @@ jQuery(function ($) {
             $(this).unbind('inview');
         }
     });
-
-    // -------------------------------------------------------------
-    // WOW JS
-    // -------------------------------------------------------------
-
-    (function () {
-
-        new WOW({
-
-            mobile:  false
-
-        }).init();
-
-    }());
 });
