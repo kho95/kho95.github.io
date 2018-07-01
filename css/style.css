@@ -35,14 +35,17 @@
 
 .title {
     min-height:100vh;
-    background: #FFD000
+    background: #FFD000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .sns-buttons {
     font-size: 3em;
     position: fixed;
-    right:1.5em;
-    top:1em;
+    right: 1em;
+    top: 1em;
     z-index: 1;
 }
 
